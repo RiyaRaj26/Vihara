@@ -48,17 +48,33 @@ button:hover {
 }
 
 /* Input Fields */
+
+.input-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    cursor: pointer; 
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.input-group input[type="radio"] {
+    margin: 0;
+    width: 16px; 
+    height: 16px; 
+    cursor: pointer; 
+    accent-color: #ff758c;
+}
+
+.input-group input[type="radio"]:hover {
+    transform: scale(1.1);
+}
 .input-group {
     margin-top: 15px;
     text-align: left;
 }
 
-.input-group label {
-    font-weight: bold;
-    display: block;
-}
-
-.input-group input,
 .input-group select {
     width: 100%;
     padding: 12px;
