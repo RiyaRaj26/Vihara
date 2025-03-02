@@ -12,41 +12,24 @@
     
     <div class="mode-grid">
       <div class="mode-card" onclick="selectMode('Flight')">
-        <img src="images/flight.png" alt="Flight">
+        <img src="flight.png" alt="Flight">
         <h3>Flight</h3>
       </div>
       <div class="mode-card" onclick="selectMode('Train')">
-        <img src="images/train.png" alt="Train">
+        <img src="train.png" alt="Train">
         <h3>Train</h3>
       </div>
       <div class="mode-card" onclick="selectMode('Bus')">
-        <img src="images/bus.png" alt="Bus">
+        <img src="bus.png" alt="Bus">
         <h3>Bus</h3>
       </div>
       <div class="mode-card" onclick="selectMode('Car')">
-        <img src="images/car.png" alt="Car">
+        <img src="car.png" alt="Car">
         <h3>Car</h3>
       </div>
     </div>
 
     <button onclick="proceedToBooking()">Proceed</button>
   </div>
-
-  <script>
-    let selectedMode = "";
-
-    function selectMode(mode) {
-      selectedMode = mode;
-      alert(`You selected: ${mode}`);
-    }
-
-    function proceedToBooking() {
-      if (selectedMode) {
-        window.location.href = "booking-details.html";
-      } else {
-        alert("Please select a mode of travel.");
-      }
-    }
-  </script>
 </body>
 </html>
