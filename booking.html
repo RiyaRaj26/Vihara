@@ -14,20 +14,30 @@
 
   <section class="payment-container">
     <h2>Select Payment Method</h2>
-    <!-- Example form; no actual payment processing -->
     <form action="thankyou.html" method="get">
-      <label>
-        <input type="radio" name="payment" value="credit" required> Credit/Debit Card
-      </label>
-      <label>
-        <input type="radio" name="payment" value="upi" required> UPI
-      </label>
-      <label>
-        <input type="radio" name="payment" value="netbanking" required> Net Banking
-      </label>
-      <label>
-        <input type="radio" name="payment" value="cash" required> Pay at Pickup
-      </label>
+      <div class="payment-option">
+        <label>
+          <input type="radio" name="payment" value="credit" required> Credit/Debit Card
+        </label>
+      </div>
+
+      <div class="payment-option">
+        <label>
+          <input type="radio" name="payment" value="upi" required> UPI
+        </label>
+      </div>
+
+      <div class="payment-option">
+        <label>
+          <input type="radio" name="payment" value="netbanking" required> Net Banking
+        </label>
+      </div>
+
+      <div class="payment-option">
+        <label>
+          <input type="radio" name="payment" value="cash" required> Pay at Pickup
+        </label>
+      </div>
 
       <button type="submit" class="proceed-btn">Confirm Booking</button>
     </form>
