@@ -86,6 +86,10 @@ button:hover {
 .input-group label {
     font-weight: bold;
     display: block;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 .input-group input, select {
@@ -94,6 +98,8 @@ button:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+     width: auto;
+    margin: 0;
 }
 
 /* Home Page */
