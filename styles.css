@@ -58,7 +58,9 @@ button:hover {
     display: block;
 }
 
-.input-group input, select {
+.input-group input,
+.input-group select,
+.input-group textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -68,7 +70,8 @@ button:hover {
 
 .input-group input[type="date"],
 .input-group input[type="time"],
-.input-group input[type="number"] {
+.input-group input[type="number"],
+.input-group input[type="tel"] {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -83,6 +86,10 @@ button:hover {
     border-radius: 5px;
     font-size: 16px;
     background-color: white;
+}
+
+.input-group textarea {
+    resize: vertical; /* Allows vertical resizing */
 }
 
 /* Home Page */
@@ -142,7 +149,7 @@ button:hover {
 /* Responsive Design for Tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
     .container {
-        max-width: 600px;
+        max-width: 600px; 
     }
 
     .options-grid {
@@ -150,7 +157,7 @@ button:hover {
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 28px; 
     }
 
     h2 {
