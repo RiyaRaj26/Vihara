@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vihara - Payment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Payment</h1>
+    <p>Complete your booking by selecting a payment method.</p>
+  </header>
+
+  <section class="payment-container">
+    <h2>Select Payment Method</h2>
+    <!-- Example form; no actual payment processing -->
+    <form action="thankyou.html" method="get">
+      <label>
+        <input type="radio" name="payment" value="credit" required> Credit/Debit Card
+      </label>
+      <label>
+        <input type="radio" name="payment" value="upi" required> UPI
+      </label>
+      <label>
+        <input type="radio" name="payment" value="netbanking" required> Net Banking
+      </label>
+      <label>
+        <input type="radio" name="payment" value="cash" required> Pay at Pickup
+      </label>
+
+      <button type="submit" class="proceed-btn">Confirm Booking</button>
+    </form>
+  </section>
+</body>
+</html>
