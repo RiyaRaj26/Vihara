@@ -3,70 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vihara - Booking Details</title>
+  <title>Vihara - Choose Mode of Travel</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h2>Booking Details</h2>
+    <h2>Choose Your Mode of Travel</h2>
     
-    <form action="passenger-details.html">
-      <div class="input-group">
-        <label>From:</label>
-        <select required>
-          <option value="">Select City</option>
-          <option>Mumbai</option>
-          <option>Delhi</option>
-          <option>Bangalore</option>
-          <option>Goa</option>
-          <option>Ahmedabad</option>
-          <option>Chennai</option>
-          <option>Kolkata</option>
-        </select>
+    <div class="mode-grid">
+      <div class="mode-card" onclick="selectMode('Flight')">
+        <img src="images/flight.png" alt="Flight">
+        <h3>Flight</h3>
       </div>
-
-      <div class="input-group">
-        <label>To:</label>
-        <select required>
-          <option value="">Select City</option>
-          <option>Mumbai</option>
-          <option>Delhi</option>
-          <option>Bangalore</option>
-          <option>Goa</option>
-          <option>Ahmedabad</option>
-          <option>Chennai</option>
-          <option>Kolkata</option>
-        </select>
+      <div class="mode-card" onclick="selectMode('Train')">
+        <img src="images/train.png" alt="Train">
+        <h3>Train</h3>
       </div>
-
-      <div class="input-group">
-        <label>Date of Travel:</label>
-        <input type="date" required>
+      <div class="mode-card" onclick="selectMode('Bus')">
+        <img src="images/bus.png" alt="Bus">
+        <h3>Bus</h3>
       </div>
-
-      <div class="input-group">
-        <label>Time of Travel:</label>
-        <input type="time" required>
+      <div class="mode-card" onclick="selectMode('Car')">
+        <img src="images/car.png" alt="Car">
+        <h3>Car</h3>
       </div>
+    </div>
 
-      <div class="input-group">
-        <label>Number of Passengers:</label>
-        <input type="number" min="1" max="20" required>
-      </div>
-
-      <div class="input-group">
-        <label>Preferred Class:</label>
-        <select required>
-          <option value="">Select Class</option>
-          <option>Economy</option>
-          <option>Business</option>
-          <option>First Class</option>
-          <option>Not Applicable</option>
-        </select>
-      </div>
-
-      <button type="submit">Proceed</button>
-    </form>
+    <button onclick="proceedToBooking()">Proceed</button>
   </div>
+
+  <script>
+    let selectedMode = "";
+
+    function selectMode(mode) {
+      selectedMode = mode;
+      alert(`You selected: ${mode}`);
+    }
+
+    function proceedToBooking() {
+      if (selectedMode) {
+        window.location.href = "booking-details.html";
+      } else {
+        alert("Please select a mode of travel.");
+      }
+    }
+  </script>
 </body>
 </html>
