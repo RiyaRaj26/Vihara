@@ -30,6 +30,36 @@ h1, h2 {
     color: #ff758c;
 }
 
+/* Add this to your existing styles.css */
+.option-card {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.option-card img {
+    width: 60px; /* Adjust the size of the images */
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.option-card span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.option-card:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
 button {
     width: 100%;
     padding: 12px;
