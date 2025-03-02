@@ -4,23 +4,23 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-  }
-  
-  body {
+}
+
+body {
     background: linear-gradient(to right, #007bff, #00c6ff);
     color: white;
     text-align: center;
-  }
-  
-  /* ----- Headers ----- */
-  header {
+}
+
+/* ----- Headers ----- */
+header {
     padding: 20px;
     background: rgba(0, 0, 0, 0.2);
     font-size: 1.5em;
-  }
-  
-  /* ----- Login Page (index.html) ----- */
-  .login-container {
+}
+
+/* ----- Login Page (index.html) ----- */
+.login-container {
     background: white;
     padding: 40px;
     width: 350px;
@@ -30,48 +30,9 @@
     margin: auto;
     margin-top: 5%;
     color: black;
-  }
-  
-  .login-box h2 {
-    font-weight: bold;
-    color: #007bff;
-  }
-  
-  .login-box span {
-    color: #00c6ff;
-  }
-  
-  .input-group {
-    margin-top: 15px;
-    text-align: left;
-  }
-  
-  .input-group label {
-    font-weight: bold;
-  }
-  
-  .input-group input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .forgot-password {
-    display: block;
-    text-align: right;
-    font-size: 14px;
-    margin: 10px 0;
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .forgot-password:hover {
-    text-decoration: underline;
-  }
-  
-  button {
+}
+
+button {
     width: 100%;
     padding: 12px;
     background: linear-gradient(to right, #007bff, #00c6ff);
@@ -81,18 +42,13 @@
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background: linear-gradient(to right, #00c6ff, #007bff);
-  }
-  
-  .signup-text {
-    margin-top: 15px;
-    font-size: 14px;
-  }
-  
-  /* ----- Home Page (home.html) ----- */
+}
+
+/* ----- Home Page (home.html) ----- */
 .travel-options {
     margin-top: 40px;
 }
@@ -100,7 +56,7 @@
 .travel-options h2 {
     margin-bottom: 10px;
     text-align: center;
-    font-size: 2em; 
+    font-size: 2em;
 }
 
 .options-container {
@@ -115,12 +71,12 @@
     text-decoration: none;
     color: white;
     background: rgba(255, 255, 255, 0.2);
-    padding: 30px; 
-    border-radius: 15px; 
+    padding: 30px;
+    border-radius: 15px;
     font-size: 1.5em;
     transition: 0.3s;
-    width: 180px; 
-    height: 180px; 
+    width: 180px;
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,11 +86,10 @@
 .option:hover {
     background: rgba(255, 255, 255, 0.4);
     transform: scale(1.1);
-    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3); 
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3);
 }
-  
-  /* ----- Booking Details (booking-details.html) ----- */
-  
+
+/* ----- Booking Details (booking-details.html) ----- */
 .journey-form {
     display: flex;
     justify-content: center;
@@ -143,60 +98,30 @@
     flex-wrap: wrap;
     width: 80%;
     max-width: 600px;
-  }
-  
-  .journey-form label {
-    font-weight: bold;
-    margin-top: 5px;
-  }
-  
-  .journey-form select {
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
-    font-size: 1em;
-  }
-  
-  /* Cost Table */
-  .cost-table {
+}
+
+/* Cost Table */
+.cost-table {
     width: 80%;
     max-width: 600px;
     margin: 20px auto;
     border-collapse: collapse;
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
-  }
-  
-  .cost-table thead {
-    background: rgba(0, 0, 0, 0.3);
-  }
-  
-  .cost-table th, .cost-table td {
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  
-  .cost-table th {
-    font-weight: bold;
-    color: #ffdd57;
-  }
-  
-  .cost-table tr:nth-child(even) {
-    background: rgba(255, 255, 255, 0.1);
-  }
-  
-  /* Map Container */
-  .map-container {
+}
+
+/* Map Container */
+.map-container {
     margin: 20px auto;
     width: 80%;
     max-width: 600px;
     background: rgba(255, 255, 255, 0.2);
     padding: 10px;
     border-radius: 5px;
-  }
-  
-  /* Proceed Button */
-  .proceed-btn {
+}
+
+/* Proceed Button */
+.proceed-btn {
     display: inline-block;
     margin-top: 20px;
     text-decoration: none;
@@ -206,113 +131,148 @@
     border-radius: 5px;
     font-size: 1.2em;
     transition: 0.3s;
-  }
-  
-  .proceed-btn:hover {
+}
+
+.proceed-btn:hover {
     background: #218838;
-  }
-  
-  
-  /* ----- Passenger Details (passenger-details.html) ----- */
-  .form-container {
+}
+
+/* ----- Passenger Details (passenger-details.html) ----- */
+.form-container {
     text-align: center;
     padding: 20px;
-  }
-  
-  form {
+}
+
+form {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 80%;
     max-width: 400px;
     margin: 20px auto;
-  }
-  
-  label {
-    text-align: left;
-    font-weight: bold;
-    margin-bottom: 2px;
-    color: white;
-  }
-  
-  input, select {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    font-size: 1em;
-  }
-  
-  .proceed-btn {
-    display: inline-block;
-    margin-top: 20px;
-    text-decoration: none;
-    color: white;
-    background: #28a745;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1.2em;
-    transition: 0.3s;
-  }
-  
-  .proceed-btn:hover {
-    background: #218838;
-  }
-  
-  /* ----- Final Booking (booking.html) ----- */
-  .payment-container {
+}
+
+/* ----- Final Booking (booking.html) ----- */
+.payment-container {
     text-align: center;
     padding: 20px;
-  }
-  
-  .payment-container h2 {
-    margin-bottom: 10px;
-  }
-  
-  .payment-container form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 80%;
-    max-width: 400px;
-    margin: 20px auto;
-    color: white;
-  }
-  
-  .payment-container label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: normal;
-  }
-  
-  .payment-container input[type="radio"] {
-    transform: scale(1.2);
-    cursor: pointer;
-  }
+}
 
 /* ----- Thank You Page (thankyou.html) ----- */
 .thankyou-container {
     text-align: center;
     padding: 20px;
-  }
-  
-  .thankyou-container h2 {
-    margin-bottom: 10px;
-    color: #ffdd57;
-  }
-  
-  .back-home-btn {
-    display: inline-block;
-    margin-top: 20px;
-    text-decoration: none;
-    color: white;
-    background: #28a745;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1.2em;
-    transition: 0.3s;
-  }
-  
-  .back-home-btn:hover {
-    background: #218838;
-  }
+}
+
+/* Tablet Screens (Max Width: 1024px) */
+@media (max-width: 1024px) {
+    .options-container {
+        gap: 20px;
+    }
+    
+    .option {
+        width: 160px;
+        height: 160px;
+        font-size: 1.3em;
+    }
+    
+    .travel-options h2 {
+        font-size: 1.8em;
+    }
+    
+    .journey-form {
+        width: 90%;
+    }
+    
+    .cost-table {
+        width: 90%;
+    }
+}
+
+/* Mobile Screens (Max Width: 768px) */
+@media (max-width: 768px) {
+    .options-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .option {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        font-size: 1.2em;
+    }
+    
+    .travel-options h2 {
+        font-size: 1.5em;
+    }
+    
+    .journey-form {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .cost-table {
+        width: 100%;
+        font-size: 0.9em;
+    }
+    
+    .proceed-btn {
+        width: 90%;
+        padding: 12px;
+        font-size: 1.1em;
+    }
+    
+    .login-container {
+        width: 90%;
+        padding: 30px;
+    }
+    
+    button {
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    form {
+        width: 90%;
+    }
+}
+
+/* Small Mobile Screens (Max Width: 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .option {
+        font-size: 1em;
+        padding: 15px;
+    }
+    
+    .travel-options h2 {
+        font-size: 1.3em;
+    }
+    
+    .login-container {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    button {
+        font-size: 14px;
+    }
+    
+    .cost-table th, .cost-table td {
+        padding: 8px;
+    }
+    
+    .proceed-btn {
+        font-size: 1em;
+    }
+    
+    .thankyou-container h2 {
+        font-size: 1.5em;
+    }
+}
