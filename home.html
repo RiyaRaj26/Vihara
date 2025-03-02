@@ -7,23 +7,42 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to Vihara</h1>
-    <p>Travel Anywhere, Anytime</p>
+  <header class="home-header">
+    <h1>Welcome to <span>Vihara</span></h1>
+    <p>Your one-stop solution for all travel bookings</p>
   </header>
 
-  <!-- User selects a mode; each link goes to booking-details.html -->
   <section class="travel-options">
-    <h2>Choose Your Mode of Travel</h2>
+    <h2>Select Your Mode of Travel</h2>
     <div class="options-container">
-      <a href="booking-details.html" class="option flight">✈ Flights</a>
-      <a href="booking-details.html" class="option train">🚆 Trains</a>
-      <a href="booking-details.html" class="option bus">🚌 Buses</a>
-      <a href="booking-details.html" class="option car">🚗 Cars</a>
-      <a href="booking-details.html" class="option auto">🚖 Auto Rickshaw</a>
-      <a href="booking-details.html" class="option bike">🏍 Bikes</a>
-      <a href="booking-details.html" class="option taxi">🚕 Taxi</a>
+      <a href="booking-details.html?mode=flight" class="option flight">
+        <img src="images/flight.png" alt="Flight">
+        <h3>Flights</h3>
+        <p>Book domestic & international flights with ease.</p>
+      </a>
+
+      <a href="booking-details.html?mode=train" class="option train">
+        <img src="images/train.png" alt="Train">
+        <h3>Trains</h3>
+        <p>Comfortable and affordable train travel.</p>
+      </a>
+
+      <a href="booking-details.html?mode=bus" class="option bus">
+        <img src="images/bus.png" alt="Bus">
+        <h3>Buses</h3>
+        <p>Convenient bus services across cities.</p>
+      </a>
+
+      <a href="booking-details.html?mode=car" class="option car">
+        <img src="images/car.png" alt="Car">
+        <h3>Car Rentals</h3>
+        <p>Rent a car for your personalized journey.</p>
+      </a>
     </div>
   </section>
+
+  <footer>
+    <p>&copy; 2025 Vihara Travel. All rights reserved.</p>
+  </footer>
 </body>
 </html>
