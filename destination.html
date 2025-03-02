@@ -3,42 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vihara - Explore the World</title>
+  <title>Vihara - Choose Destination</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to Vihara</h1>
-    <p>Your journey begins here. Explore the world with ease.</p>
+    <h2>Choose Your Destination</h2>
     
     <div class="destination-grid">
-      <div class="destination-card">
+      <div class="destination-card" onclick="selectDestination('Mumbai')">
         <img src="images/mumbai.jpg" alt="Mumbai">
         <h3>Mumbai</h3>
       </div>
-      <div class="destination-card">
+      <div class="destination-card" onclick="selectDestination('Delhi')">
         <img src="images/delhi.jpg" alt="Delhi">
         <h3>Delhi</h3>
       </div>
-      <div class="destination-card">
+      <div class="destination-card" onclick="selectDestination('Goa')">
         <img src="images/goa.jpg" alt="Goa">
         <h3>Goa</h3>
       </div>
-      <div class="destination-card">
+      <div class="destination-card" onclick="selectDestination('Bangalore')">
         <img src="images/bangalore.jpg" alt="Bangalore">
         <h3>Bangalore</h3>
       </div>
-      <div class="destination-card">
-        <img src="images/kolkata.jpg" alt="Kolkata">
-        <h3>Kolkata</h3>
-      </div>
-      <div class="destination-card">
-        <img src="images/chennai.jpg" alt="Chennai">
-        <h3>Chennai</h3>
-      </div>
     </div>
 
-    <a href="booking-details.html"><button>Start Your Journey</button></a>
+    <button onclick="proceedToMode()">Proceed</button>
   </div>
+
+  <script>
+    let selectedDestination = "";
+
+    function selectDestination(destination) {
+      selectedDestination = destination;
+      alert(`You selected: ${destination}`);
+    }
+
+    function proceedToMode() {
+      if (selectedDestination) {
+        window.location.href = "mode.html";
+      } else {
+        alert("Please select a destination.");
+      }
+    }
+  </script>
 </body>
 </html>
