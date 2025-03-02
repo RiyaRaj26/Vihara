@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vihara - Booking Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Booking Details</h1>
+    <p>Select your origin and destination, check the cost, and see the map below.</p>
+  </header>
+
+  <section class="details-container">
+    <h2>Journey Planner</h2>
+
+    <form class="journey-form">
+      <label for="from">From:</label>
+      <select id="from" name="from">
+        <option value="mumbai">Mumbai</option>
+        <option value="pune">Pune</option>
+        <option value="delhi">Delhi</option>
+        <option value="bangalore">Bangalore</option>
+      </select>
+
+      <label for="to">To:</label>
+      <select id="to" name="to">
+        <option value="mumbai">Mumbai</option>
+        <option value="pune">Pune</option>
+        <option value="delhi">Delhi</option>
+        <option value="bangalore">Bangalore</option>
+      </select>
+    </form>
+
+    <!-- Static table with cost info -->
+    <h3>Approximate Costs</h3>
+    <table class="cost-table">
+      <thead>
+        <tr>
+          <th>Route</th>
+          <th>Mode</th>
+          <th>Cost (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mumbai → Pune</td>
+          <td>Bus</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>Mumbai → Pune</td>
+          <td>Train</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>Delhi → Bangalore</td>
+          <td>Flight</td>
+          <td>4000</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <!-- Embedded Map (Static) -->
+    <h3>Route Map (Mumbai to Pune)</h3>
+    <div class="map-container">
+
+      <!--static Google Map embed for Mumbai to Pune -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.701767127!2d72.71412823032124!3d19.082482211550335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1740891334391!5m2!1sen!2sin" 
+      width="600" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    
+    </div>
+
+    <!-- Link to next step -->
+    <p style="margin-top: 20px;">
+      <a href="passenger-details.html" class="proceed-btn">Proceed with this route</a>
+    </p>
+  </section>
+</body>
+</html>
