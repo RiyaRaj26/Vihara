@@ -31,22 +31,5 @@
 
     <button onclick="proceedToMode()">Proceed</button>
   </div>
-
-  <script>
-    let selectedDestination = "";
-
-    function selectDestination(destination) {
-      selectedDestination = destination;
-      alert(`You selected: ${destination}`);
-    }
-
-    function proceedToMode() {
-      if (selectedDestination) {
-        window.location.href = "mode.html";
-      } else {
-        alert("Please select a destination.");
-      }
-    }
-  </script>
 </body>
 </html>
