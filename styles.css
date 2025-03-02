@@ -96,7 +96,7 @@ button:hover {
 .travel-options h2 {
     margin-bottom: 10px;
     text-align: center;
-    font-size: 2em; 
+    font-size: 2em;
 }
 
 .options-container {
@@ -115,7 +115,7 @@ button:hover {
     border-radius: 15px;
     font-size: 1.5em;
     transition: 0.3s;
-    width: 200px; 
+    width: 200px;
     height: 200px;
     display: flex;
     align-items: center;
@@ -205,6 +205,44 @@ button:hover {
     background: #218838;
 }
 
+/* ----- Passenger Details (updated for better responsiveness and styling) ----- */
+.passenger-details-container {
+    background: white;
+    padding: 40px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    color: black;
+    text-align: left;
+}
+
+.passenger-details-container h2 {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Form Inputs */
+.passenger-details-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.passenger-details-form input,
+.passenger-details-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.passenger-details-form label {
+    font-weight: bold;
+}
+
 /* ----- Media Queries for Responsive Design ----- */
 @media (max-width: 768px) {
     .login-container {
@@ -223,6 +261,20 @@ button:hover {
 
     .map-container iframe {
         height: 300px;
+    }
+
+    .passenger-details-container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .passenger-details-form input,
+    .passenger-details-form select {
+        padding: 10px;
+    }
+
+    .passenger-details-form label {
+        font-size: 1.1em;
     }
 }
 
@@ -245,5 +297,22 @@ button:hover {
     .proceed-btn {
         font-size: 1em;
         padding: 8px 16px;
+    }
+
+    .passenger-details-container {
+        padding: 15px;
+    }
+
+    .passenger-details-form input,
+    .passenger-details-form select {
+        padding: 8px;
+    }
+
+    .passenger-details-form label {
+        font-size: 1em;
+    }
+
+    .passenger-details-container h2 {
+        font-size: 1.5em;
     }
 }
