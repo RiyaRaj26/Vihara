@@ -29,7 +29,7 @@
     text-align: center;
     margin: auto;
     margin-top: 5%;
-    color: black; /* Make text dark inside the box */
+    color: black;
   }
   
   .login-box h2 {
@@ -93,38 +93,45 @@
   }
   
   /* ----- Home Page (home.html) ----- */
-  .travel-options {
+.travel-options {
     margin-top: 40px;
-  }
-  
-  .travel-options h2 {
+}
+
+.travel-options h2 {
     margin-bottom: 10px;
-  }
-  
-  .options-container {
+    text-align: center;
+    font-size: 2em; 
+}
+
+.options-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     margin-top: 20px;
-  }
-  
-  .option {
+}
+
+.option {
     text-decoration: none;
     color: white;
     background: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 1.2em;
+    padding: 30px; 
+    border-radius: 15px; 
+    font-size: 1.5em;
     transition: 0.3s;
-    width: 150px;
+    width: 180px; 
+    height: 180px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-  }
-  
-  .option:hover {
+}
+
+.option:hover {
     background: rgba(255, 255, 255, 0.4);
     transform: scale(1.1);
-  }
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3); 
+}
   
   /* ----- Booking Details (booking-details.html) ----- */
   
