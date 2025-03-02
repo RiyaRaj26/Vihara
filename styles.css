@@ -77,7 +77,7 @@ button:hover {
 
 .destination-card, .mode-card {
     position: relative;
-    overflow: hidden;
+    overflow: auto;
     border-radius: 10px;
     transition: 0.3s;
     cursor: pointer;
