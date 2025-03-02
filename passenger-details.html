@@ -13,19 +13,26 @@
   </header>
 
   <section class="form-container">
-    <!-- Submits to booking.html for payment -->
     <form action="booking.html" method="get">
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" required>
+      <div class="input-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+      </div>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+      </div>
 
-      <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" name="phone" required>
+      <div class="input-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+      </div>
 
-      <label for="seats">Number of Seats:</label>
-      <input type="number" id="seats" name="seats" required>
+      <div class="input-group">
+        <label for="seats">Number of Seats:</label>
+        <input type="number" id="seats" name="seats" required placeholder="Enter number of seats">
+      </div>
 
       <button type="submit" class="proceed-btn">Proceed to Payment</button>
     </form>
