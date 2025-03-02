@@ -92,10 +92,20 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 10px; /* Space between radio button and text */
+    margin-bottom: 10px; /* Space between each payment option */
+    cursor: pointer; /* Change cursor to pointer for better UX */
 }
 
 .input-group input[type="radio"] {
     margin: 0; /* Remove default margin */
+    width: 16px; /* Set a fixed width for radio buttons */
+    height: 16px; /* Set a fixed height for radio buttons */
+    cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+/* Optional: Add hover effect for radio buttons */
+.input-group input[type="radio"]:hover {
+    transform: scale(1.1); /* Slightly enlarge radio buttons on hover */
 }
 
 /* Home Page */
@@ -148,7 +158,7 @@ button:hover {
     }
 
     .options-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
@@ -159,7 +169,7 @@ button:hover {
     }
 
     .options-grid {
-        grid-template-columns: repeat(3, 1fr); 
+        grid-template-columns: repeat(3, 1fr);
     }
 
     h1 {
