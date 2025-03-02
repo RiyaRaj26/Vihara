@@ -87,27 +87,6 @@ button:hover {
     background-color: white;
 }
 
-/* Payment Page - Radio Buttons */
-.input-group label {
-    display: flex;
-    align-items: center;
-    gap: 10px; 
-    margin-bottom: 10px; 
-    cursor: pointer; 
-    font-size: 16px;
-}
-
-.input-group input[type="radio"] {
-    margin: 0; 
-    width: 16px; 
-    height: 16px;
-    cursor: pointer; 
-    accent-color: #ff758c;
-}
-
-.input-group input[type="radio"]:hover {
-    transform: scale(1.1); 
-
 /* Home Page */
 .options-grid {
     display: grid;
@@ -130,9 +109,10 @@ button:hover {
 }
 
 .option-card img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
+    width: 60px; 
+    height: 60px; 
+    margin-bottom: 10px; 
+    object-fit: contain; 
 }
 
 .option-card span {
