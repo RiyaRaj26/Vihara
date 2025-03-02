@@ -3,46 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vihara - Payment</title>
+  <title>Vihara - Booking Details</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h2>Payment</h2>
+    <h2>Booking Details</h2>
     
-    <form action="thankyou.html">
+    <form action="payment.html">
       <div class="input-group">
-        <label>
-          <input type="radio" name="payment" required>
-          Credit/Debit Card
-        </label>
+        <label>Full Name:</label>
+        <input type="text" required>
       </div>
       <div class="input-group">
-        <label>
-          <input type="radio" name="payment" required>
-          UPI
-        </label>
+        <label>Email:</label>
+        <input type="email" required>
       </div>
       <div class="input-group">
-        <label>
-          <input type="radio" name="payment" required>
-          Net Banking
-        </label>
+        <label>Phone Number:</label>
+        <input type="tel" required>
       </div>
       <div class="input-group">
-        <label>
-          <input type="radio" name="payment" required>
-          Wallet
-        </label>
+        <label>Date of Travel:</label>
+        <input type="date" required>
       </div>
       <div class="input-group">
-        <label>
-          <input type="radio" name="payment" required>
-          Cash on Delivery
-        </label>
+        <label>Number of Passengers:</label>
+        <input type="number" min="1" max="10" required>
       </div>
-
-      <button type="submit">Confirm Booking</button>
+      <button type="submit">Proceed to Payment</button>
     </form>
   </div>
 </body>
