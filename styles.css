@@ -87,6 +87,17 @@ button:hover {
     background-color: white;
 }
 
+/* Payment Page - Radio Buttons */
+.input-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between radio button and text */
+}
+
+.input-group input[type="radio"] {
+    margin: 0; /* Remove default margin */
+}
+
 /* Home Page */
 .options-grid {
     display: grid;
@@ -130,18 +141,6 @@ button:hover {
     color: #ff7eb3;
 }
 
-/* Passenger Details Page */
-.passenger-details .input-group label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.passenger-details .input-group label img {
-    width: 20px;
-    height: 20px;
-}
-
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
     .container {
@@ -164,7 +163,7 @@ button:hover {
     }
 
     h1 {
-        font-size: 28px; 
+        font-size: 28px;
     }
 
     h2 {
