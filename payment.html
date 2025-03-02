@@ -3,46 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vihara - Passenger Details</title>
+  <title>Vihara - Payment</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h2>Passenger Details</h2>
+    <h2>Payment</h2>
     
-    <form action="booking.html">
+    <form action="thankyou.html">
       <div class="input-group">
-        <label>Full Name:</label>
-        <input type="text" required>
+        <label>
+          <input type="radio" name="payment" required>
+          Credit/Debit Card
+        </label>
       </div>
-
       <div class="input-group">
-        <label>Email:</label>
-        <input type="email" required>
+        <label>
+          <input type="radio" name="payment" required>
+          UPI
+        </label>
       </div>
-
       <div class="input-group">
-        <label>Phone Number:</label>
-        <input type="tel" required>
+        <label>
+          <input type="radio" name="payment" required>
+          Net Banking
+        </label>
       </div>
-
       <div class="input-group">
-        <label>Gender:</label>
-        <select required>
-          <option value="">Select Gender</option>
-          <option>Male</option>
-          <option>Female</option>
-          <option>Other</option>
-          <option>Prefer not to say</option>
-        </select>
+        <label>
+          <input type="radio" name="payment" required>
+          Wallet
+        </label>
       </div>
-
       <div class="input-group">
-        <label>Age:</label>
-        <input type="number" min="1" max="120" required>
+        <label>
+          <input type="radio" name="payment" required>
+          Cash on Delivery
+        </label>
       </div>
-
-      <button type="submit">Proceed</button>
+      <button type="submit">Confirm Payment</button>
     </form>
   </div>
 </body>
